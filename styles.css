@@ -11,7 +11,7 @@ li{
     text-align: center;
     display: block;
     float: left;
-    height: 900px;
+    height: 100vh;
     width: fit-content;
     background-color: rgb(219, 219, 247);
 }
