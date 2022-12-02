@@ -88,6 +88,10 @@ a:hover{
     width: min-content;
 }
 
+.proj li{
+    margin: 10px;
+}
+
 .p-img{
     width: 305px;
     height: 230px;
