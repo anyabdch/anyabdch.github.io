@@ -18,7 +18,7 @@ function listProjects(projects){
         for (let project of projects){
             let html = `
                     <img class="p-img" src="images/${project.cover}">
-                        <a class="deets" rel="${project.title} Repository" href="https://anyabdch.github.io/${project.title}">
+                        <a class="deets" rel="${project.title} Repository" href="https://github.com/anyabdch/${project.title}">
                             <h1>${project.title}</h1>
                             <p>${project.desc}</p>
                         </a>
