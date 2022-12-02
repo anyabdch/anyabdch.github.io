@@ -1,0 +1,179 @@
+html{
+    background-color: lavender;
+    font-family:'Segoe UI', Verdana, sans-serif;
+}
+
+li{
+    display: block;
+}
+
+.home{
+    text-align: center;
+    display: block;
+    float: left;
+    height: 900px;
+    width: fit-content;
+    background-color: rgb(219, 219, 247);
+}
+
+.home #menu{
+    position: relative;
+    margin: auto;
+}
+
+.home #menubutton{
+    font-weight: bolder;
+    text-decoration: wavy underline;
+}
+
+header{
+    text-align: center;
+    display: block;
+    margin-right: 30px;
+}
+
+#bio{
+    width: 233px;
+    font-size: smaller;
+}
+
+#menu{
+    background-color: rgb(219, 219, 247);
+    width: fit-content;
+    position: fixed;
+    top: 0%;
+    left: 0%;
+}
+
+#menubutton{
+    background-color: rgb(219, 219, 247);
+    border: none;
+    font-size: larger;
+    padding: 10px;
+}
+
+.hidden{
+    display: none;
+}
+
+nav li{
+    display: block;
+    padding: 15px 40px 15px 0px;
+    text-align: center;
+}
+
+a{
+    color: inherit;
+}
+
+a:link{
+    text-decoration: None; 
+}
+
+a:visited{
+    text-decoration: None;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+#projects{
+    text-align: center;
+}
+
+.proj{
+    display: inline-block;
+    background-color: whitesmoke;
+    width: min-content;
+    margin: 10px;
+}
+
+.p-img{
+    width: 305px;
+    height: 230px;
+}
+
+.deets{
+    text-align: center;
+    margin: 5px;
+}
+
+.b-img{
+    width: 240px;
+    height: auto;
+}
+
+iframe{
+    width: 100%;
+    height: 1000px;
+}
+
+.current{
+    font-weight: bolder;
+    box-shadow: 0px 1px;
+}
+
+.current:hover{
+    text-decoration: none;
+}
+
+#disclaimer{
+    height: fit-content;
+    width: 200px;
+    background-color: palegoldenrod;
+    position: fixed;
+    top: 10px;
+    right: 10px;
+}
+
+#disclaimer p{
+    padding-left: 15px;
+}
+
+#disclaimer button{
+    background-color: palegoldenrod;
+    border: none;
+    font-weight: bolder;
+    color: red;
+}
+
+body{
+    margin: 0px;
+}
+
+#contact{
+    padding: 15px;
+}
+
+#links{
+    padding: 15px;
+    display: inline-block;
+    margin: 0px;
+}
+
+#links li{
+    float: left;
+    padding: 0px 10px;
+}
+
+#l-img{
+    width: 50px;
+    height: auto;
+}
+
+#b-img{
+    width: 100px;
+    height: auto;
+    padding-top: 10px;
+    border-radius: 50%;
+}
+
+#name{
+    margin: 5px 0px;
+}
+
+#title{
+    margin: 0px;
+    padding-top: 10px;
+}
