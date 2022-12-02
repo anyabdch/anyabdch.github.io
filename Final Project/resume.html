@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="styles.css">
+        <title>Anya Bardach > Resume</title>
+        <script src="main.js"></script>
+    </head>
+    <body>    <!--found on https://www.labnol.org/embed-pdf-200208 -->
+        <iframe 
+            frameborder="0"
+            scrolling="no"
+            src="https://docs.google.com/document/d/1M0HbhMPY1BaTRlNGFOrUQy1prTBDO76ABsT1EXfO2zM/preview">
+        </iframe>
+        <div id="menu" onmouseleave="openClose('menubar');">
+            <button id="menubutton" title="Menu" onmouseenter="openClose('menubar');" onclick="openClose('menubar');">Menu</button>
+            <nav id="menubar" class="hidden">
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="bio.html">About Me</a></li>
+                    <li><a class="current" href="resume.html">Resume</a></li>
+                </ul>
+            </nav>
+        </div>
+    </body>
+</html>
