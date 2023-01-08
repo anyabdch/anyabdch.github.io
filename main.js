@@ -3,19 +3,19 @@ var projects = [
         title: "PocketConcert",
         cover: "SpotifyLogo.png",
         desc: "Spotify based recommendation software",
-        idx: False
+        idx: "F"
     },
     {
         title: "TicTacToe",
         cover: "TicTacToe.png",
         desc: "Play tic-tac-toe against AI",
-        idx: False
+        idx: "F"
     },
     {
         title: "DirectFlix",
         cover: "net_logo.png",
         desc: "Netflix random genre generator",
-        idx: True
+        idx: "T"
     }
 ]
 
@@ -24,8 +24,9 @@ function listProjects(projects){
     if (portfolio){
       if(projects instanceof Array){
         for (let project of projects){
-            if(project.idx){
-                let html = `
+            let html = ''
+            if(project.idx == "T"){
+                html = `
                         <img class="p-img" src="images/${project.cover}">
                             <a class="deets" rel="${project.title} Repository" href="https://github.com/anyabdch/${project.title}/index.html">
                                 <h1>${project.title}</h1>
@@ -35,7 +36,7 @@ function listProjects(projects){
                     `
                 }
             else{
-                let html = `
+                html = `
                         <img class="p-img" src="images/${project.cover}">
                             <a class="deets" rel="${project.title} Repository" href="https://github.com/anyabdch/${project.title}">
                                 <h1>${project.title}</h1>
