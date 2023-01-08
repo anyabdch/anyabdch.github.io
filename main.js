@@ -28,7 +28,7 @@ function listProjects(projects){
             if(project.idx == "T"){
                 html = `
                         <img class="p-img" src="images/${project.cover}">
-                            <a class="deets" rel="${project.title} Repository" href="https://github.com/anyabdch/${project.title}/index.html">
+                            <a class="deets" rel="${project.title} Repository" href="https://anyabdch.github.io/${project.title}/index.html">
                                 <h1>${project.title}</h1>
                                 <p>${project.desc}</p>
                             </a>
