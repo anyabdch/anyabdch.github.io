@@ -11,7 +11,7 @@ li{
     text-align: center;
     display: block;
     float: left;
-    height: 100vh;
+    height: 900px;
     width: fit-content;
     background-color: rgb(219, 219, 247);
 }
@@ -35,7 +35,6 @@ header{
 #bio{
     width: 233px;
     font-size: smaller;
-    text-align: center;
 }
 
 #menu{
@@ -59,7 +58,7 @@ header{
 
 nav li{
     display: block;
-    padding: 15px 40px 0px 0px;
+    padding: 15px 40px 15px 0px;
     text-align: center;
 }
 
@@ -90,10 +89,6 @@ a:hover{
     margin: 10px;
 }
 
-.proj li{
-    padding: 10px;
-}
-
 .p-img{
     width: 305px;
     height: 230px;
@@ -102,11 +97,6 @@ a:hover{
 .deets{
     text-align: center;
     margin: 5px;
-}
-
-.b-img{
-    width: 240px;
-    height: auto;
 }
 
 iframe{
@@ -162,12 +152,12 @@ body{
     padding: 0px 10px;
 }
 
-#l-img{
+.l-img{
     width: 50px;
     height: auto;
 }
 
-#b-img{
+.b-img{
     width: 100px;
     height: auto;
     padding-top: 10px;
@@ -183,10 +173,11 @@ body{
     padding-top: 10px;
 }
 
-.text{
-    margin: 0px 10px;
+.n-img{
+    width: 250px;
+    height: 242px;
 }
 
-#conclusion{
-    margin-bottom: 30px;
+#nyt{
+    text-align: center;
 }
