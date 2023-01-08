@@ -8,6 +8,11 @@ var projects = [
         title: "TicTacToe",
         cover: "TicTacToe.png",
         desc: "Play tic-tac-toe against AI"
+    },
+    {
+        title: "DirectFlix",
+        cover: "net_logo.png",
+        desc: "Netflix random genre generator"
     }
 ]
 
