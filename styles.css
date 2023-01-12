@@ -181,3 +181,7 @@ body{
 #nyt{
     text-align: center;
 }
+
+.text{
+    padding-right: 10px;
+}
