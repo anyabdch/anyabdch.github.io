@@ -1,69 +1,11 @@
-html{
-    background-color: lavender;
-    font-family:'Segoe UI', Verdana, sans-serif;
-}
-
-li{
-    display: block;
-}
-
-.home{
-    text-align: center;
-    display: block;
-    float: left;
-    height: 900px;
-    width: fit-content;
-    background-color: rgb(219, 219, 247);
-}
-
-.home #menu{
-    position: relative;
-    margin: auto;
-}
-
-.home #menubutton{
-    font-weight: bolder;
-    text-decoration: wavy underline;
-}
-
-header{
-    text-align: center;
-    display: block;
-    margin-right: 30px;
-}
-
-#bio{
-    width: 233px;
-    font-size: smaller;
-}
-
-#menu{
-    background-color: rgb(219, 219, 247);
-    width: fit-content;
-    position: fixed;
-    top: 0%;
-    left: 0%;
-}
-
-#menubutton{
-    background-color: rgb(219, 219, 247);
-    border: none;
-    font-size: larger;
-    padding: 10px;
-}
-
-.hidden{
-    display: none;
-}
-
-nav li{
-    display: block;
-    padding: 15px 40px 15px 0px;
-    text-align: center;
-}
+#styles are alphabetized
 
 a{
     color: inherit;
+}
+
+a:hover{
+    text-decoration: underline;
 }
 
 a:link{
@@ -74,34 +16,25 @@ a:visited{
     text-decoration: None;
 }
 
-a:hover{
-    text-decoration: underline;
+.b-img{
+    width: 100px;
+    height: auto;
+    padding-top: 10px;
+    border-radius: 50%;
 }
 
-#projects{
-    text-align: center;
+#bio{
+    width: 233px;
+    font-size: smaller;
 }
 
-.proj{
-    display: inline-block;
-    background-color: whitesmoke;
-    width: min-content;
-    margin: 10px;
+
+body{
+    margin: 0px;
 }
 
-.p-img{
-    width: 305px;
-    height: 230px;
-}
-
-.deets{
-    text-align: center;
-    margin: 5px;
-}
-
-iframe{
-    width: 100%;
-    height: 1000px;
+#contact{
+    padding: 15px;
 }
 
 .current{
@@ -111,6 +44,11 @@ iframe{
 
 .current:hover{
     text-decoration: none;
+}
+
+.deets{
+    text-align: center;
+    margin: 5px;
 }
 
 #disclaimer{
@@ -133,12 +71,52 @@ iframe{
     color: red;
 }
 
-body{
-    margin: 0px;
+header{
+    text-align: center;
+    display: block;
+    margin-right: 30px;
 }
 
-#contact{
-    padding: 15px;
+.hidden{
+    display: none;
+}
+
+.home{
+    text-align: center;
+    display: block;
+    float: left;
+    height: 900px;
+    width: fit-content;
+    background-color: rgb(219, 219, 247);
+}
+
+.home #menu{
+    position: relative;
+    margin: auto;
+}
+
+.home #menubutton{
+    font-weight: bolder;
+    text-decoration: wavy underline;
+}
+
+html{
+    background-color: lavender;
+    font-family:'Segoe UI', Verdana, sans-serif;
+}
+
+iframe{
+    width: 100%;
+    height: 1000px;
+}
+
+.l-img{
+    width: 50px;
+    height: auto;
+}
+
+li{
+    display: block;
 }
 
 #links{
@@ -152,25 +130,19 @@ body{
     padding: 0px 10px;
 }
 
-.l-img{
-    width: 50px;
-    height: auto;
+#menu{
+    background-color: rgb(219, 219, 247);
+    width: fit-content;
+    position: fixed;
+    top: 0%;
+    left: 0%;
 }
 
-.b-img{
-    width: 100px;
-    height: auto;
-    padding-top: 10px;
-    border-radius: 50%;
-}
-
-#name{
-    margin: 5px 0px;
-}
-
-#title{
-    margin: 0px;
-    padding-top: 10px;
+#menubutton{
+    background-color: rgb(219, 219, 247);
+    border: none;
+    font-size: larger;
+    padding: 10px;
 }
 
 .n-img{
@@ -178,10 +150,41 @@ body{
     height: 242px;
 }
 
+#name{
+    margin: 5px 0px;
+}
+
+nav li{
+    display: block;
+    padding: 15px 40px 15px 0px;
+    text-align: center;
+}
+
 #nyt{
+    text-align: center;
+}
+
+.p-img{
+    width: 305px;
+    height: 230px;
+}
+
+.proj{
+    display: inline-block;
+    background-color: whitesmoke;
+    width: min-content;
+    margin: 10px;
+}
+
+#projects{
     text-align: center;
 }
 
 .text{
     padding-right: 10px;
+}
+
+#title{
+    margin: 0px;
+    padding-top: 10px;
 }
