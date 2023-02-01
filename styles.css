@@ -26,6 +26,9 @@ a:visited{
     font-size: smaller;
 }
 
+#biolink{
+    text-decoration: dashed underline;
+}
 
 body{
     margin: 0px;
