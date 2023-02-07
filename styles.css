@@ -134,6 +134,7 @@ li{
 #menu{
     background-color: rgb(219, 219, 247);
     width: fit-content;
+    height: 100vh;
     position: fixed;
     top: 0%;
     left: 0%;
