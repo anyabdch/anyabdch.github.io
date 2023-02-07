@@ -18,7 +18,7 @@ var projects = [
         idx: "T"
     },
     {
-        title: "Spotify",
+        title: "Dear-Spotify",
         cover: "SpotifyLogo.png",
         desc: "A resume of sorts",
         idx: "T"
