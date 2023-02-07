@@ -16,6 +16,12 @@ var projects = [
         cover: "net_logo.png",
         desc: "Netflix random genre generator",
         idx: "T"
+    },
+    {
+        title: "Spotify",
+        cover: "SpotifyLogo.png",
+        desc: "A resume of sorts",
+        idx: "T"
     }
 ]
 
