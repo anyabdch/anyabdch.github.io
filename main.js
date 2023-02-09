@@ -1,5 +1,11 @@
 var projects = [
     {
+        title: "Dear-Spotify",
+        cover: "discover-weekly.jpg",
+        desc: "A resume of sorts",
+        idx: "T"
+    },
+    {
         title: "PocketConcert",
         cover: "SpotifyLogo.png",
         desc: "Spotify based recommendation software",
@@ -15,12 +21,6 @@ var projects = [
         title: "DirectFlix",
         cover: "net_logo.png",
         desc: "Netflix random genre generator",
-        idx: "T"
-    },
-    {
-        title: "Dear-Spotify",
-        cover: "discover-weekly.jpg",
-        desc: "A resume of sorts",
         idx: "T"
     }
 ]
