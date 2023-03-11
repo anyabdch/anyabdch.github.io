@@ -4,6 +4,12 @@ var projects = [
         cover: "discover-weekly.jpg",
         desc: "A resume of sorts",
         idx: "T"
+    }, 
+    {
+        title: "DirectFlix",
+        cover: "net_logo.png",
+        desc: "Netflix random genre generator",
+        idx: "T"
     },
     {
         title: "PocketConcert",
@@ -16,12 +22,6 @@ var projects = [
         cover: "TicTacToe.png",
         desc: "Play tic-tac-toe against AI",
         idx: "F"
-    },
-    {
-        title: "DirectFlix",
-        cover: "net_logo.png",
-        desc: "Netflix random genre generator",
-        idx: "T"
     }
 ]
 
