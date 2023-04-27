@@ -76,6 +76,7 @@ header{
     text-align: center;
     display: block;
     margin-right: 30px;
+    position: fixed;
 }
 
 .hidden{
