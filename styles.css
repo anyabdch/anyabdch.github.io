@@ -76,8 +76,6 @@ body{
 header{
     text-align: center;
     display: block;
-    position: fixed;
-    left: 0px;
 }
 
 .hidden{
@@ -87,6 +85,8 @@ header{
 .home{
     text-align: center;
     display: block;
+    position: fixed;
+    left: 0px;
     float: left;
     height: 100vh;
     width: fit-content;
