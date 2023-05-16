@@ -32,6 +32,7 @@ a:visited{
 
 body{
     margin: 0px;
+    display: inline;
 }
 
 #contact{
@@ -76,7 +77,9 @@ header{
     text-align: center;
     display: block;
     margin-right: 30px;
-    position: fixed;
+    position: absolute;
+    top: 0px;
+    left: 0px;
 }
 
 .hidden{
