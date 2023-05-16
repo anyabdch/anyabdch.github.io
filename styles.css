@@ -141,6 +141,10 @@ li{
     left: 0%;
 }
 
+#main{
+    margin-left: 230px;
+}
+
 #menubutton{
     background-color: rgb(219, 219, 247);
     border: none;
