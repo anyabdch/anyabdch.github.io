@@ -8,7 +8,6 @@
         <title>Anya Bardach</title>
     </head>
     <body>
-        <div>
         <header class="home">
             <img class="b-img" rel="me!" src="images/profile.jpg">
             <h1 id="name">Anya Bardach</h1>
@@ -37,19 +36,20 @@
                 </nav>
             </div>
         </header>
+        <div id="main">
+            <h1 id="title">Portfolio</h1>
+            <div id="projects">
+                <script>listProjects(projects)</script>
+            </div>
+            <div id="nyt">
+                <h3>If I could make this a resume line about dedication, I would</h3>
+                <img class="n-img" rel="November crosswords" src="images/nyt3.jpg">
+                <img class="n-img" rel="December crosswords" src="images/nyt2.jpg">
+                <img class="n-img" rel="January crosswords" src="images/nyt1.jpg">
+            </div>
+            <div id="disclaimer">
+                <button onclick="openClose('disclaimer');">&#10007</button>
+                <p>This site was built for class from scratch without any templates or frameworks.</p>
+            </div> 
         </div>
-        <h1 id="title">Portfolio</h1>
-        <div id="projects">
-            <script>listProjects(projects)</script>
-        </div>
-        <div id="nyt">
-            <h3>If I could make this a resume line about dedication, I would</h3>
-            <img class="n-img" rel="November crosswords" src="images/nyt3.jpg">
-            <img class="n-img" rel="December crosswords" src="images/nyt2.jpg">
-            <img class="n-img" rel="January crosswords" src="images/nyt1.jpg">
-        </div>
-        <div id="disclaimer">
-            <button onclick="openClose('disclaimer');">&#10007</button>
-            <p>This site was built for class from scratch without any templates or frameworks.</p>
-        </div> 
 </html>
