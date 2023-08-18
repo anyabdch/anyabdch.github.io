@@ -104,7 +104,7 @@ header{
 }
 
 html{
-    background-image: radial-gradient(lavender, white);
+    background-image: radial-gradient(rgb(219, 219, 247), lavender, white);
     font-family:'Segoe UI', Verdana, sans-serif;
 }
 
