@@ -19,6 +19,7 @@ a:visited{
     height: auto;
     padding-top: 10px;
     border-radius: 50%;
+    border: 1px solid rgb(186, 186, 207);
 }
 
 #bio{
