@@ -173,7 +173,7 @@ nav li{
 }
 
 .outlined {
-    border: solid black !important;
+    border: solid rgb(186, 186, 207) !important;
     border-width: 1px 0px 1px 1px !important;
     box-shadow: 2px 2px 4px rgb(186, 186, 207);
 }
