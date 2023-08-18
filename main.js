@@ -52,7 +52,7 @@ function listProjects(projects){
                     `
                 }
             let container = document.createElement("div");
-            container.className = "proj";
+            container.className = "proj outlined";
             container.id = project.title
             container.innerHTML = html;
             container.tabIndex = projects.indexOf(project);
