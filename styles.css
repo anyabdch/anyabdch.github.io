@@ -171,6 +171,12 @@ nav li{
     text-align: center;
 }
 
+.outlined {
+    border: solid black !important;
+    border-width: 1px 0px 1px 1px !important;
+    box-shadow: 2px 2px 4px #465572;
+}
+
 .p-img{
     width: 305px;
     height: 230px;
