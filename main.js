@@ -72,7 +72,7 @@ function listProjects(projects){
             container2.className = "carousel-inner";
             container2.innerHTML = html2;
             portfolio.append(container2);
-        }
+        })
   
       }
   
