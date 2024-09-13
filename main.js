@@ -26,37 +26,52 @@ var projects = [
 ]
 
 function listProjects(projects){
-    let portfolio = document.querySelector("#projects");
+    let portfolio = document.querySelector("#projectSlide");
     if (portfolio){
       if(projects instanceof Array){
-        for (let project of projects){
-            let html = ''
-            if(project.idx == "T"){
-                html = `
-                        <img class="p-img" src="images/${project.cover}">
-                            <a class="deets" rel="${project.title} Repository" href="https://anyabdch.github.io/${project.title}/index.html">
-                                <h1>${project.title}</h1>
-                                <p>${project.desc}</p>
-                            </a>
+        projects.forEach((project,index) => {
+            let html1 = ''
+            let html2 = ''
+            if(index == 0){
+                html1 = `
+                            <button type="button" data-bs-target="#projectSlides" data-bs-slide-to=${index} 
+                                    class="active" aria-current="true" aria-label="Project ${index}"></button>
                     </div>
-                    `
-                }
+                    `;
+                html2 = ` <div class="carousel-item active">
+                                    <a class="deets"
+                                       rel="${project.title} Repository"
+                                        href="//${project.site}"> 
+                                        <img class="p-img" src="\static\website\images\${project.title}.png">                                       <h1>{{project.title}}</h1>
+                                        <p>${project.desc}</p>
+                                    </a>
+                            </div>
+                        </div> `
+            }
             else{
-                html = `
-                        <img class="p-img" src="images/${project.cover}">
-                            <a class="deets" rel="${project.title} Repository" href="https://github.com/anyabdch/${project.title}">
-                                <h1>${project.title}</h1>
-                                <p>${project.desc}</p>
-                            </a>
-                    </div>
-                    `
+                html1 = `
+                            <button type="button" data-bs-target="#projectSlides" data-bs-slide-to=${index}
+                            aria-label="Project ${index}"></button>
+                    `;
+                html2 = ` <div class="carousel-item">
+                                        <a class="deets"
+                                           rel="${project.title} Repository"
+                                            href="//${project.site}"> 
+                                            <img class="p-img" src="\static\website\images\${project.title}.png">                                       <h1>{{project.title}}</h1>
+                                            <p>${project.desc}</p>
+                                        </a>
+                                </div>
+                            </div> `
                 }
-            let container = document.createElement("div");
-            container.className = "proj outlined";
-            container.id = project.title
-            container.innerHTML = html;
-            container.tabIndex = projects.indexOf(project);
-            portfolio.append(container);
+            let container1 = document.createElement("div");
+            container1.className = "carousel-indicators";
+            container1.innerHTML = html1;
+            portfolio.append(container1);
+            
+            let container2 = document.createElement("div");
+            container2.className = "carousel-inner";
+            container2.innerHTML = html2;
+            portfolio.append(container2);
         }
   
       }
