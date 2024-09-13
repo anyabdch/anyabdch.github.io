@@ -1,5 +1,17 @@
+/* general */
+
+* {
+    box-sizing: border-box;
+    text-align: center;
+    align-items: center;
+    align-self: center;
+    align-content: center;
+    justify-content: center;
+    justify-self: center;
+}
+
 a{
-    color: inherit;
+    color: black !important;
 }
 
 a:hover{
@@ -7,175 +19,132 @@ a:hover{
 }
 
 a:link{
-    text-decoration: None; 
+    text-decoration: None;
 }
 
 a:visited{
     text-decoration: None;
 }
 
-.b-img{
-    width: 100px;
-    height: auto;
-    padding-top: 10px;
-    border-radius: 50%;
-    border: 1px solid rgb(186, 186, 207);
-}
-
-#bio{
-    width: 233px;
-    font-size: smaller;
-}
-
-#biolink{
-    text-decoration: solid underline;
-}
-
 body{
-    margin: 0px;
     display: inline;
+    padding: 0px !important;
 }
 
-#contact{
-    padding: 15px;
+footer{
+    background-color: white;
+    padding: 20px 0px;
 }
 
-.current{
-    font-weight: bolder;
-    box-shadow: 0px 1px;
-}
-
-.current:hover{
-    text-decoration: none;
-}
-
-.deets{
-    text-align: center;
-    margin: 5px;
-}
-
-#disclaimer{
-    height: fit-content;
-    width: 200px;
-    background-color: palegoldenrod;
-    position: fixed;
-    top: 10px;
-    right: 10px;
-}
-
-#disclaimer p{
-    padding-left: 15px;
-}
-
-#disclaimer button{
-    background-color: palegoldenrod;
-    border: none;
-    font-weight: bolder;
-    color: red;
-}
-
-header{
-    text-align: center;
+.head {
     display: block;
+    position: static;
+    width: max-content !important;
+    padding: 10px;
+    margin: 10px 30px !important;
+}
+
+.head h1 {
+    margin: 0px;
+    font-size: larger;
+    padding: 10px 0px;
 }
 
 .hidden{
     display: none;
 }
 
-.home{
-    text-align: center;
-    display: block;
-    position: fixed;
-    left: 0px;
-    float: left;
-    height: 100vh;
-    width: fit-content;
-    background-color: rgb(219, 219, 247);
-}
-
-.home #menu{
-    position: relative;
-    margin: auto;
-}
-
-.home #menubutton{
-    font-weight: bolder;
-    text-decoration: wavy underline;
+.highlighted {
+    background-color: bisque;
 }
 
 html{
-    background-image: radial-gradient(rgb(219, 219, 247), lavender, white);
     font-family:'Segoe UI', Verdana, sans-serif;
+    overflow-x: hidden;
 }
 
 iframe{
     width: 100%;
-    height: 1000px;
+    height: 1100px;
 }
-
-.l-img{
-    width: 50px;
-    height: auto;
-}
-
+  
 li{
     display: block;
 }
 
-#links{
-    padding: 15px;
-    display: inline-block;
-    margin: 0px;
+
+.outlined {
+    border: solid rgb(186, 186, 207) !important;
+    border-width: 1px 0px 1px 1px !important;
+    box-shadow: 2px 2px 4px rgb(186, 186, 207);
 }
 
-#links li{
-    float: left;
-    padding: 0px 10px;
+.row {
+    max-width: 100% !important;
 }
 
-#menu{
-    background-color: rgb(219, 219, 247);
-    width: fit-content;
-    position: fixed;
-    top: 0%;
-    left: 0%;
+/* header and footer */
+
+footer ul {
+    padding: 0px;
 }
 
-#main{
-    margin-left: 230px;
+#menuHeader {
+    position: sticky !important;
+    top: 0px;
+    background-color: ghostwhite;
+    border-bottom: 0.5px rgb(224, 224, 232) solid;
 }
 
-#menubutton{
-    background-color: rgb(219, 219, 247);
-    border: none;
-    font-size: larger;
-    padding: 10px;
+.nav li {
+    display: block;
+    font-weight: 600;
 }
 
-.n-img{
-    width: 250px;
-    height: 242px;
+.navbar-brand {
+    font-weight: 700;
+}
+
+.scrolled {
+    background-color: rgb(181, 181, 181) !important;
+    box-shadow: 0px 1px 2px rgb(186, 186, 207);
+}
+
+.scrolled * {
+    color: rgb(36, 36, 36) !important;
+}
+
+/* intro section */
+
+#b-img{
+    width: 100%;
+    height: 33vw;
+    max-height: 300px;
+}
+
+#bio{
+    margin: auto;
+}
+
+#introSection {
+    background-color: ghostwhite; 
+    height: 27vw;
+    max-height: 227px;
+    box-shadow: 2px 2px 4px rgb(186, 186, 207);
+}
+
+#introSection div {
+    width: 80%;
 }
 
 #name{
     margin: 5px 0px;
 }
 
-nav li{
-    display: block;
-    padding: 15px 40px 15px 0px;
-    text-align: center;
-}
+/* projects */
 
-#nyt{
-    text-align: center;
-}
-
-.outlined {
-    border: solid rgb(186, 186, 207) !important;
-    border-width: 1px 0px 1px 1px !important;
-    box-shadow: 2px 2px 4px rgb(186, 186, 207);
+.deets{
+    margin: 5px;
 }
 
 .p-img{
@@ -190,17 +159,57 @@ nav li{
     margin: 10px;
 }
 
-#projects{
-    text-align: center;
+#projects {
     margin-right: 30px;
+}
+
+/* bio */
+#funFacts li {
+    display: list-item;
+    text-align: left;
+}
+
+/* unsure */
+
+.home{
+    display: block;
+    position: fixed;
+    left: 0px;
+    float: left;
+    height: 100vh;
+    width: fit-content;
+}
+
+.home #menu{
+    position: relative;
+    margin: auto;
+}
+
+.home #menubutton{
+    font-weight: bolder;
+    text-decoration: wavy underline;
+}
+
+.l-img{
+    width: 50px;
+    height: auto;
+}
+
+#links{
+    display: inline-block;
+    margin: 0px;
+}
+
+#links li{
+    float: left;
+    padding: 0px 10px;
+}
+
+.n-img{
+    width: 250px;
+    height: 242px;
 }
 
 .text{
     padding: 0px 10px;
-}
-
-#title{
-    margin: 0px;
-    padding-top: 10px;
-    padding-left: 10px;
 }
