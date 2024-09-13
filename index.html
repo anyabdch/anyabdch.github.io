@@ -1,55 +1,88 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <meta name="keywords" content="Anya, Anya Bardach, Bardach, Northwestern">
-        <link rel="stylesheet" href="styles.css">
-        <script src="main.js"></script>
-        <title>Anya Bardach</title>
-    </head>
-    <body>
-        <header class="home outlined">
-            <img class="b-img" rel="me!" src="images/profile.jpg">
-            <h1 id="name">Anya Bardach</h1>
-            <h3 id="bio"><i>Student at Northwestern University pursuing a BSEd in Social Policy and Education, and an MS in Computer Science </i></h3>
-            <ul id="contact">
-                <li>&#128205 Santa Monica, CA</li>
-                <li>&#9993 anya.bardach@gmail.com</li>
-                <li>&#128222 (310) 339-0032</li>
-            </ul>
-            <ul id="links">
-                <li><a rel="Anya Bardach's Profile" href="https://www.linkedin.com/in/anyabardach">
-                    <img class="l-img" rel="LinkedIn logo" src=images/LinkedIn.png>
-                    <br>LinkedIn</a></li>
-                <li><a rel="Anya Bardach's Repositories" href="https://github.com/anyabdch">
-                    <img class="l-img" rel="GitHub logo" src=images/GitHub.png>
-                    <br>GitHub</a></li>
-            </ul>
-            <div id="menu" onmouseleave="openClose('menubar');">
-                <button id="menubutton" title="Menu" onmouseenter="openClose('menubar');" onclick="openClose('menubar');">Menu</button>
-                <nav id="menubar" class="hidden">
-                    <ul>
-                        <li><a class="current" href="home.html">Home</a></li>
-                        <li><a href="bio.html">About Me</a></li>
-                        <li><a href="resume.html">Resume</a></li>
-                    </ul>
-                </nav>
+{% extends "website/master.html" %}
+
+{% load static %}
+
+    {% block title %} Home Page {% endblock %}
+
+    {% block body %}
+        <img id="b-img" rel="me!" src="{% static 'website/images/profile.png' %}">
+        <section id="introSection">
+            <div id="bio">
+                <h1 id="name"> Hey, I'm Anya </h1>
+                <h3 style="font-size: smaller;"><i>Computer Science Master's student at Northwestern University with a BS in Education and Social Policy</i></h3>
             </div>
-        </header>
-        <div id="main">
-            <h1 id="title">Portfolio</h1>
-            <div id="projects">
-                <script>listProjects(projects)</script>
+        </section>
+        <section id="projectsSection">
+            <div class="head" id="projectsTitle">
+                <h1>Featured Projects</h1>
             </div>
-            <div id="nyt">
-                <h3>If I could make this a resume line about dedication, I would</h3>
-                <img class="n-img outlined" rel="November crosswords" src="images/nyt3.jpg">
-                <img class="n-img outlined" rel="December crosswords" src="images/nyt2.jpg">
-                <img class="n-img outlined" rel="January crosswords" src="images/nyt1.jpg">
+            <div id="projectSlides" class="col carousel carousel-dark slide w-400">
+                <div class="carousel-indicators">
+                    {% for project in projects %}
+                        {% if forloop.first %}
+                            <button type="button" data-bs-target="#projectSlides" data-bs-slide-to={{forloop.counter0}} class="active" aria-current="true" aria-label="Project {{forloop.counter}}"></button>
+                        {% else %}
+                            <button type="button" data-bs-target="#projectSlides" data-bs-slide-to={{forloop.counter0}} aria-label="Project {{forloop.counter}}"></button>
+                        {% endif %}
+                    {% endfor %}
+                </div>
+                <div class="carousel-inner">
+                    {% for project in projects %}
+                        {% if forloop.first %}
+                            <div class="carousel-item active">
+                        {% else %}
+                            <div class="carousel-item">
+                        {% endif %}
+                                    <a class="deets"
+                                       rel="{{project.title}} Repository"
+                                        href="//{{project.site}}"> 
+                                        <img class="p-img" src="\static\website\images\{{project.title}}.png">                                       <h1>{{project.title}}</h1>
+                                        <p>{{project.desc}}</p>
+                                    </a>
+                            </div>
+                        {% endfor %}
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#projectSlides" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true" style="color: black !important;"></span>
+                    <span class="visually-hidden">Previous</span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#projectSlides" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                  </button>
             </div>
-            <div id="disclaimer" class="outlined">
-                <button onclick="openClose('disclaimer');">&#10007</button>
-                <p>This site was built for class from scratch without any templates or frameworks.</p>
-            </div> 
-        </div>
-</html>
+        </section>
+        <section id="aboutSection" class="hidden" style="height: 42vw;">
+            <div class="head">
+                <h1>About Me</h1>
+                <a>My resume in a different format</a>
+            </div>
+            <div class="row">
+                <div class="col">
+                    Education
+                </div>
+                <div class="col">
+                    Activities
+                </div>
+                <div class="col">
+                    Work Experience
+                </div>
+            </div>
+        </section>
+
+    <script>
+        window.onscroll = function() {
+            if(window.scrollY >= 273){
+                document.getElementById("menuHeader").classList.add("scrolled");
+                document.getElementById("contactButton").classList.remove("btn-secondary");
+                document.getElementById("contactButton").classList.add("btn-light");
+            }
+            else{
+                
+                document.getElementById("menuHeader").classList.remove("scrolled");
+                document.getElementById("contactButton").classList.add("btn-secondary");
+                document.getElementById("contactButton").classList.remove("btn-light");
+            }
+        }
+    </script>
+    {% endblock %}
