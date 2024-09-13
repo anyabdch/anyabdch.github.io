@@ -1,1 +1,55 @@
-// deprecated
+{% extends "website/master.html" %}
+
+{% load static %}
+
+{% block title %} About Anya {% endblock %}
+
+{% block body %}
+
+<img id="b-img" rel="me!" src="{% static 'website/images/profile.png' %}">
+
+<div style="padding: 15px 30px;">
+<h3>Fun Facts</h3>
+<ul id="funFacts"> 
+    <li>I'm originally from Santa Monica, CA</li> 
+    <li>I play water polo and I love backcountry hiking, leisure
+        swimming, a good book, and travelling on budget airlines.</li> 
+    <li>I have an unhealthy obsession with the New York Times 
+        crosswords (mini and regular, all the days of the week for 
+        those keeping score). My fastest mini time is 6 second!. </li> 
+    <li>I don't eat fried food because when I was in the 8th grade my dad
+         bet me I couldn't go 2 weeks. It's been 8 years.</li>
+    <li>I'm bilingual! I grew up speaking Spanish, and I'm proficient in 
+        Italian and French. </li>
+</ul>
+<h3>Academic Background</h3>
+<p>
+    My first quarter at Northwestern I took the introductory CS class in Python to fulfill a general 
+    elective. I fell in love with programming and knew that I had found my path. 
+    By the end of my first month I had declared as a CS major and by the end of my first year I had a job TAing for 
+    the department. Programming had become my favorite passtime--it was a creative outlet for puzzling, problem solving, and innovation.
+    I took classes in various languages (including Python, C, and C++) that explored data structures and
+    algorithms, web development, mathematical theory in CS, and more. During my second year 
+    at Northwestern, I decided to put my CS education on hold to finish a Bachelor's of Science in Social Policy and Education with a focus 
+    on human development--how our identities, motivations, and socializations form and evolve over our lifetimes. I knew I wanted
+    to be in the CS field career-wise, but I felt that understanding human development was key to seeing where in the field to focus. Throughout this time, I
+    continued to work in the CS deparment as a teaching assistant, and began work as an Ethics Coordinator bringing conversations on tech ethics into the 
+    introductory CS courses. I am now pursuing a master's in Computer Science to deepen my passion into a thorough mastery across a well-rounded variety of topics in the field.
+     Academically, my primary interest lies at the intersection of Computer Science and Human Development--human-computer interaction and accessible design. My bachelor's not being a traditional degree 
+     associated with CS has given me a unique academic perspective for understanding the field and its implications for society. My background in social 
+     development, identity, and interaction now functions as the framework through which I study Computer Science. I’ve gained the tools to explore how 
+     these factors apply to the impact and uses of technology for diverse groups of people. 
+
+</p>
+<h3>Career Goals</h3>
+<p>
+    I hope to further apply my education to a career in user-centered software engineering. I'm building a deeper understanding 
+    of how to identify and create technology that fosters productivity, collective action, and social good. As I enter the workforce, I'm seeking companies and organizations
+    that reflect these values, and are ethically creating technology that isn’t driven by addiction, convenience, and consumption. 
+</p>
+<h6 class="text" id="conclusion"><i>
+For more information on my work experience, including teaching CS, working on user interface, and non-tech work including a brief stint with the State Department,
+take a peek at my resume <a id="biolink" rel="Resume" href="/resume">here</a> or in the menu!
+</i></h6>
+</div>
+{% endblock %}
