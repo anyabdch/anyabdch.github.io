@@ -1,0 +1,34 @@
+[
+  {
+    "id": 1,
+    "title": "Dear-Spotify",
+    "description": "A resume of sorts - an interactive web application that presents my skills and experience through Spotify-style design",
+    "image": "discover-weekly.jpg",
+    "link": "https://anyabdch.github.io/Dear-Spotify/index.html",
+    "technologies": ["HTML", "CSS", "JavaScript"]
+  },
+  {
+    "id": 2,
+    "title": "DirectFlix",
+    "description": "Netflix random genre generator - helps users discover new content by suggesting random genres and movies",
+    "image": "net_logo.png",
+    "link": "https://anyabdch.github.io/DirectFlix/index.html",
+    "technologies": ["HTML", "CSS", "JavaScript", "API Integration"]
+  },
+  {
+    "id": 3,
+    "title": "PocketConcert",
+    "description": "Spotify-based recommendation software that creates personalized concert experiences based on your music taste",
+    "image": "SpotifyLogo.png",
+    "link": "https://github.com/anyabdch/PocketConcert",
+    "technologies": ["Python", "Spotify API", "Machine Learning"]
+  },
+  {
+    "id": 4,
+    "title": "TicTacToe",
+    "description": "Play tic-tac-toe against AI - an intelligent game implementation with multiple difficulty levels",
+    "image": "TicTacToe.png",
+    "link": "https://github.com/anyabdch/TicTacToe",
+    "technologies": ["JavaScript", "AI", "Game Development"]
+  }
+]
