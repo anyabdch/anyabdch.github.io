@@ -3,7 +3,7 @@
     "id": 1,
     "title": "Dear-Spotify",
     "description": "A resume of sorts - an interactive web application that presents my skills and experience through Spotify-style design",
-    "image": "discover-weekly.jpg",
+    "image": "Dear-Spotify.png",
     "link": "https://anyabdch.github.io/Dear-Spotify/index.html",
     "technologies": ["HTML", "CSS", "JavaScript"]
   },
@@ -11,7 +11,7 @@
     "id": 2,
     "title": "DirectFlix",
     "description": "Netflix random genre generator - helps users discover new content by suggesting random genres and movies",
-    "image": "net_logo.png",
+    "image": "DirectFlix.png",
     "link": "https://anyabdch.github.io/DirectFlix/index.html",
     "technologies": ["HTML", "CSS", "JavaScript", "API Integration"]
   },
@@ -19,7 +19,7 @@
     "id": 3,
     "title": "PocketConcert",
     "description": "Spotify-based recommendation software that creates personalized concert experiences based on your music taste",
-    "image": "SpotifyLogo.png",
+    "image": "PocketConcert.png",
     "link": "https://github.com/anyabdch/PocketConcert",
     "technologies": ["Python", "Spotify API", "Machine Learning"]
   },

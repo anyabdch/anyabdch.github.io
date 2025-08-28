@@ -1,0 +1,44 @@
+[
+  {
+    "id": 1,
+    "date": "2024",
+    "title": "Northwestern University",
+    "description": "Currently pursuing BSEd in Social Policy and Education, and MS in Computer Science with focus on full-stack development and educational technology",
+    "type": "education"
+  },
+  {
+    "id": 2,
+    "date": "2023",
+    "title": "Web Development Journey Begins",
+    "description": "Started building full-stack applications and exploring modern web technologies including React, Node.js, and Python",
+    "type": "project"
+  },
+  {
+    "id": 3,
+    "date": "2023",
+    "title": "PocketConcert Development",
+    "description": "Created Spotify-based recommendation software using Python and machine learning algorithms",
+    "type": "project"
+  },
+  {
+    "id": 4,
+    "date": "2022",
+    "title": "Academic Excellence",
+    "description": "Maintained high academic standards while developing technical skills and exploring the intersection of education and technology",
+    "type": "achievement"
+  },
+  {
+    "id": 5,
+    "date": "2022",
+    "title": "First Full-Stack Project",
+    "description": "Built DirectFlix - a Netflix random genre generator that helps users discover new content",
+    "type": "project"
+  },
+  {
+    "id": 6,
+    "date": "2021",
+    "title": "Programming Foundation",
+    "description": "Started learning programming fundamentals with JavaScript, HTML, CSS, and basic computer science concepts",
+    "type": "education"
+  }
+]

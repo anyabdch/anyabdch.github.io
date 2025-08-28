@@ -2,6 +2,7 @@
    
     <head>
         <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="keywords" content="Anya, Anya Bardach, Bardach, Northwestern">
         <link rel="stylesheet" href="/styles.css">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
@@ -9,12 +10,34 @@
         <script src="/main.js"></script>
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
         <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        
+        <!-- Modern CSS Libraries -->
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet">
+        
+        <!-- Enhanced Libraries -->
+        <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+        
+        <!-- Gradient and Animation CSS -->
+        <style>
+            :root {
+                --primary-gradient: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+                --secondary-gradient: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+                --tertiary-gradient: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+                --success-gradient: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);
+                --warning-gradient: linear-gradient(135deg, #fa709a 0%, #fee140 100%);
+            }
+        </style>
         <title>Home Page</title>
     </head>
 
 
     <body class="container text-center">
-        <div id="menuHeader" class="navbar navbar-expand-lg"> 
+        <!-- Particle Background -->
+        <div id="particles-js"></div>
+        <div class="menuHeader navbar navbar-expand-lg"> 
             <div class="container-fluid">    
                 <a class="navbar-brand" href="/">Anya Bardach</a>
                 <button id="bNav" class="navbar-toggler hidden" type="button" data-bs-toggle="collapse" data-bs-target="#flexibleNav" aria-controls="flexibleNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -38,17 +61,30 @@
         </div>
 
         <img id="b-img" rel="me!" src="/images/profile.png">
+
+        <a class="admin-mode" href="#" onclick="toggleAdminMode()">Admin</a>
+
         <section id="introSection">
             <div id="bio">
                 <h1 id="name"> Hey, I'm Anya </h1>
                 <h3 style="font-size: smaller;"><i>Computer Science Master's student at Northwestern University with a BS in Education and Social Policy</i></h3>
+                <div class="typed-bio-container">
+                    <span id="typed-text"></span>
+                </div>
             </div>
         </section>
-        <section id="projectsSection">
-            <h2 id="featured-projects-title">Featured Projects</h2>
+        <section id="projectsSection" data-aos="fade-up" data-aos-duration="1000">
+            <h2 class="section-title">Featured Projects</h2>
             <div id="projects"></div>
-            <div id="projectSlides" class="col carousel carousel-dark slide w-400">
-                <script>listProjects(projects)</script>
+        </section>
+        
+        <section id="timelineSection" class="timeline-section" data-aos="fade-up" data-aos-duration="1200">
+            <div class="timeline-header">
+                <h2 class="section-title">News</h2>
+                <!--<p class="timeline-subtitle">Key milestones in my academic and professional path</p>-->
+            </div>
+            <div id="timeline-container" class="timeline-container">
+                <!-- Timeline items will be dynamically generated -->
             </div>
         </section>
         <section id="aboutSection" class="hidden" style="height: 42vw;">
@@ -68,6 +104,65 @@
                 </div>
             </div>
         </section>
+
+        <!-- Admin Panel -->
+        <div id="admin-panel" class="admin-panel hidden">
+            <div class="admin-content">
+                <div class="admin-header">
+                    <h2>Admin Dashboard</h2>
+                    <button class="close-admin" onclick="toggleAdminMode()">×</button>
+                </div>
+                
+                <div class="admin-tabs">
+                    <button class="admin-tab active" onclick="switchAdminTab('projects')">Manage Projects</button>
+                    <button class="admin-tab" onclick="switchAdminTab('timeline')">Manage Timeline</button>
+                </div>
+                
+                <!-- Project Management -->
+                <div id="admin-projects" class="admin-section">
+                    <div class="admin-form">
+                        <h3>Add New Project</h3>
+                        <form id="project-form">
+                            <input type="text" id="project-title" placeholder="Project Title" required>
+                            <textarea id="project-description" placeholder="Project Description" required></textarea>
+                            <input type="text" id="project-image" placeholder="Image filename (in images/ folder)" required>
+                            <input type="url" id="project-link" placeholder="Project URL" required>
+                            <input type="text" id="project-technologies" placeholder="Technologies (comma-separated)" required>
+                            <button type="submit">Add Project</button>
+                        </form>
+                    </div>
+                    <div class="admin-list">
+                        <h3>Current Projects</h3>
+                        <div id="project-list"></div>
+                    </div>
+                </div>
+                
+                <!-- Timeline Management -->
+                <div id="admin-timeline" class="admin-section hidden">
+                    <div class="admin-form">
+                        <h3>Add Timeline Item</h3>
+                        <form id="timeline-form">
+                            <input type="date" id="timeline-date" required>
+                            <input type="text" id="timeline-title" placeholder="Title" required>
+                            <textarea id="timeline-description" placeholder="Description" required>
+                            </textarea>
+                            <select id="timeline-type" required>
+                                <option value="">Select Type</option>
+                                <option value="education">Education</option>
+                                <option value="work">Work Experience</option>
+                                <option value="project">Project</option>
+                                <option value="achievement">Achievement</option>
+                            </select>
+                            <button type="submit">Add Timeline Item</button>
+                        </form>
+                    </div>
+                    <div class="admin-list">
+                        <h3>Current Timeline</h3>
+                        <div id="timeline-list"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
     <script>
         window.onscroll = function() {
@@ -98,8 +193,7 @@
                 <div data-bs-spy="scroll" data-bs-target="#menuHeader" data-bs-smooth-scroll="true" class="col scrollspy-example">
                     <ul id="contact">
                         <li>&#128205 Santa Monica, CA</li>
-                        <li>&#9993 anya.bardach@gmail.com</li>
-                        <li>&#128222 (310) 339-0032</li>
+                        <li>&#9993 anya[dot]bardach[at]gmail[dot]com</li>
                     </ul>
                     <ul id="links">
                         <li><a rel="Anya Bardach's Profile" href="https://www.linkedin.com/in/anyabardach">
@@ -122,4 +216,14 @@
                 </div>
               </div>
         </footer>
+        
+        <script>
+            // Initialize AOS animations
+            AOS.init({
+                duration: 800,
+                easing: 'ease-in-out',
+                once: true,
+                offset: 100
+            });
+        </script>
     </body>
