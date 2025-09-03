@@ -80,15 +80,28 @@ li{
     display: block;
 }
 
+/* styling to improve the look of the list component of bio.html */
+
+#funFacts {
+    list-style-type: none;
+    padding: 0;
+}
+
+#funFacts li {
+    padding: 8px 12px;
+    border-bottom: 1px solid #eee;
+    text-align: center;
+    align-content: center;
+}
+
+#funFacts li:last-child {
+    border-bottom: none;
+}
 
 .outlined {
     border: solid rgb(186, 186, 207) !important;
     border-width: 1px 0px 1px 1px !important;
     box-shadow: 2px 2px 4px rgb(186, 186, 207);
-}
-
-.row {
-    max-width: 100% !important;
 }
 
 /* header and footer */
@@ -169,16 +182,6 @@ footer ul {
     display: inline-block;
     width: min-content;
     margin: 10px;
-}
-
-#projects {
-    margin-right: 30px;
-}
-
-/* bio */
-#funFacts li {
-    display: list-item;
-    text-align: left;
 }
 
 /* unsure */
@@ -268,7 +271,7 @@ footer ul {
 .project-card {
     display: flex;
     align-items: center;
-    padding: 40px;
+    padding: 0px 40px;
     gap: 30px;
     width: 800px;
 }
@@ -433,19 +436,15 @@ footer ul {
 
 .timeline-header {
     text-align: center;
-    margin-bottom: 60px;
+    margin-bottom: 10px;
     position: relative;
     z-index: 2;
 }
 
 .section-title {
-    font-size: 3rem;
-    /*background: var(--primary-gradient);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;*/
+    font-size: 1.75rem;
     font-weight: 800;
-    margin-bottom: 20px;
+    margin: 20px 0px;
     /* Fallback for browsers that don't support gradient text */
     color: #212529;
 }
@@ -853,6 +852,40 @@ body {
     -webkit-text-fill-color: transparent;
     background-clip: text;
     color: #667eea; /* fallback */
+}
+
+/* improve the CSS of the footer */
+footer {
+    background: rgba(248, 250, 252, 0.95);
+    backdrop-filter: blur(20px);
+    border-top: 1px solid rgba(173, 171, 171, 0.2);
+    padding: 40px 20px;
+    width: 100vw !important;
+}
+
+footer h4 {
+    margin-bottom: 15px;
+    color: #2d3748;
+    font-weight: 700;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+footer li {
+    margin-bottom: 10px;
+    color: #6c757d;
+}
+
+footer a {
+    color: #667eea;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
 }
 
 .animate-in {
