@@ -38,7 +38,7 @@ function createCarousel() {
     portfolio.innerHTML = `
         <div class="carousel-container">
             <div class="carousel-wrapper">
-                <div class="carousel-slides" id="carousel-slides" style="transform: translateX(1200px);">
+                <div class="carousel-slides" id="carousel-slides" style="transform: translateX(2400px);">
                     ${projects.map((project, index) => `
                         <div class="carousel-slide ${index === 0 ? 'active' : ''}" data-slide="${index}">
                             <div class="project-card">
@@ -117,7 +117,7 @@ function goToSlide(slideIndex) {
     // Update carousel position
     const slidesContainer = document.getElementById('carousel-slides');
     if (slidesContainer) {
-        slidesContainer.style.transform = `translateX(${1200 - (currentSlide * w)}px)`;
+        slidesContainer.style.transform = `translateX(${2400 - (currentSlide * w)}px)`;
     }
 }
 
@@ -614,6 +614,7 @@ function addTimelineItem() {
     // Show success notification
     showNotification('Timeline item added successfully! ⭐', 'success');
 }
+
 
 
 
