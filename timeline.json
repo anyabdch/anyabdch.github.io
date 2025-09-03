@@ -1,44 +1,38 @@
 [
   {
     "id": 1,
-    "date": "2024",
-    "title": "Northwestern University",
-    "description": "Currently pursuing BSEd in Social Policy and Education, and MS in Computer Science with focus on full-stack development and educational technology",
+    "date": "June 2024",
+    "description": "Completed a Bachelor's degree in Social Policy and Education with a concentration in Human Development",
     "type": "education"
   },
   {
     "id": 2,
-    "date": "2023",
-    "title": "Web Development Journey Begins",
-    "description": "Started building full-stack applications and exploring modern web technologies including React, Node.js, and Python",
-    "type": "project"
+    "date": "June 2025",
+    "description": "Completed a Master's degree in Computer Science",
+    "type": "education"
   },
   {
     "id": 3,
-    "date": "2023",
-    "title": "PocketConcert Development",
-    "description": "Created Spotify-based recommendation software using Python and machine learning algorithms",
-    "type": "project"
+    "date": "May 2025",
+    "description": "Presented with a <a href='https://www.mccormick.northwestern.edu/computer-science/news-events/news/articles/2025/northwestern-cs-announces-fall-2024-winter-2025-outstanding-teaching-assistants-and-peer-mentors.html' target= '_blank'>Career Award</a> for sustained outstanding student mentorship in Computer Science courses",
+    "type": "award"
   },
   {
     "id": 4,
-    "date": "2022",
-    "title": "Academic Excellence",
-    "description": "Maintained high academic standards while developing technical skills and exploring the intersection of education and technology",
-    "type": "achievement"
+    "date": "June 2023",
+    "description": "Awarded a Computer Science research fellowship to conduct educational technology development and research identity-centered, equitable curriculum",
+    "type": "award"
   },
   {
     "id": 5,
-    "date": "2022",
-    "title": "First Full-Stack Project",
-    "description": "Built DirectFlix - a Netflix random genre generator that helps users discover new content",
-    "type": "project"
+    "date": "June 2025",
+    "description": "<a href='https://www.mccormick.northwestern.edu/computer-science/research/tech-reports/post-2000.html#t2024' target='_blank'>Published my Master's project!</a> For my research on generative AI benefits for educators, I designed and prototyped a classroom management tool that used generative AI in both the development and functionality to explore how agentic tools could empower educators to implement equity-focused pedagogical approaches backed by the learning sciences",
+    "type": "publication"
   },
   {
     "id": 6,
-    "date": "2021",
-    "title": "Programming Foundation",
-    "description": "Started learning programming fundamentals with JavaScript, HTML, CSS, and basic computer science concepts",
-    "type": "education"
+    "date": "August 2025",
+    "description": "Co-authored a paper on the context, implementation, and impact of generative AI education and submitted it to <a href='https://eaai-conf.github.io/year/eaai-26.html' target='_blank'>AAAI's 2026 Education Symposium</a>",
+    "type": "publication"
   }
 ]

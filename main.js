@@ -32,6 +32,9 @@ function createCarousel() {
     const portfolio = document.querySelector("#projects");
     if (!portfolio || !projects.length) return;
 
+    //reverse the order of the projects
+    projects = projects.reverse();
+
     portfolio.innerHTML = `
         <div class="carousel-container">
             <div class="carousel-wrapper">
@@ -89,7 +92,7 @@ function changeSlide(direction) {
     // Update carousel position
     const slidesContainer = document.getElementById('carousel-slides');
     if (slidesContainer) {
-        slidesContainer.style.transform = `translateX(${1200 - (currentSlide * w)}px)`;
+        slidesContainer.style.transform = `translateX(${2400 - (currentSlide * w)}px)`;
     }
 }
 
@@ -149,7 +152,6 @@ async function loadTimeline() {
             {
                 id: 1,
                 date: "2020-09",
-                title: "Started BS in Education and Social Policy",
                 description: "Began undergraduate studies at Northwestern University, focusing on the intersection of education policy and social impact.",
                 type: "education"
             }
@@ -168,9 +170,8 @@ function createTimeline() {
     container.innerHTML = sortedTimeline.map((item, index) => `
         <div class="timeline-item" data-aos="fade-${index % 2 === 0 ? 'right' : 'left'}" data-aos-delay="${index * 100}">
             <div class="timeline-content">
-                <div class="timeline-type ${item.type}">${item.type}</div>
                 <div class="timeline-date">${formatTimelineDate(item.date)}</div>
-                <h3 class="timeline-item-title">${item.title}</h3>
+                <div class="timeline-type ${item.type}">${item.type}</div>
                 <p class="timeline-description">${item.description}</p>
             </div>
             <div class="timeline-dot"></div>
@@ -238,7 +239,6 @@ function loadTimelineList() {
     container.innerHTML = sortedTimeline.map(item => `
         <div class="admin-item" data-id="${item.id}">
             <div class="admin-item-info">
-                <h4>${item.title}</h4>
                 <p>${formatTimelineDate(item.date)} - ${item.type}</p>
             </div>
             <button class="admin-delete" onclick="deleteTimelineItem(${item.id})">Delete</button>
@@ -584,14 +584,12 @@ function addProject() {
 
 function addTimelineItem() {
     const date = document.getElementById('timeline-date').value;
-    const title = document.getElementById('timeline-title').value;
     const description = document.getElementById('timeline-description').value;
     const type = document.getElementById('timeline-type').value;
     
     const newItem = {
         id: timeline.length > 0 ? Math.max(...timeline.map(t => t.id)) + 1 : 1,
         date,
-        title,
         description,
         type
     };

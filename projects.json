@@ -1,34 +1,58 @@
 [
   {
     "id": 1,
-    "title": "Dear-Spotify",
-    "description": "A resume of sorts - an interactive web application that presents my skills and experience through Spotify-style design",
-    "image": "Dear-Spotify.png",
-    "link": "https://anyabdch.github.io/Dear-Spotify/index.html",
-    "technologies": ["HTML", "CSS", "JavaScript"]
+    "title": "WildQuarters",
+    "description": "An improved roommate matching service for college students",
+    "image": "GitHub.png",
+    "link": "https://github.com/392-f24/WildQuarters",
+    "technologies": ["HTML", "CSS", "JavaScript", "Rapid Prototyping"]
   },
   {
     "id": 2,
-    "title": "DirectFlix",
-    "description": "Netflix random genre generator - helps users discover new content by suggesting random genres and movies",
-    "image": "DirectFlix.png",
-    "link": "https://anyabdch.github.io/DirectFlix/index.html",
-    "technologies": ["HTML", "CSS", "JavaScript", "API Integration"]
+    "title": "CommuniFridge",
+    "description": "A live update online tracking and request system for the Evanston community fridges",
+    "image": "GitHub.png",
+    "link": "https://github.com/392-f24/CommuniFridge",
+    "technologies": ["HTML", "CSS", "JavaScript", "Rapid Prototyping"]
   },
   {
     "id": 3,
-    "title": "PocketConcert",
-    "description": "Spotify-based recommendation software that creates personalized concert experiences based on your music taste",
-    "image": "PocketConcert.png",
-    "link": "https://github.com/anyabdch/PocketConcert",
-    "technologies": ["Python", "Spotify API", "Machine Learning"]
+    "title": "Nocus",
+    "description": "Subletting service for Northwestern off-campus students",
+    "image": "GitHub.png",
+    "link": "https://github.com/392-f24/Nocus",
+    "technologies": ["HTML", "CSS", "JavaScript", "Rapid Prototyping"]
   },
   {
     "id": 4,
-    "title": "TicTacToe",
-    "description": "Play tic-tac-toe against AI - an intelligent game implementation with multiple difficulty levels",
-    "image": "TicTacToe.png",
-    "link": "https://github.com/anyabdch/TicTacToe",
-    "technologies": ["JavaScript", "AI", "Game Development"]
+    "title": "Building Safer Streets",
+    "description": "A spatial analysis of fatal pedestrian accidents in Cook County, IL and proposed solutions",
+    "image": "GitHub.png",
+    "link": "https://storymaps.arcgis.com/stories/694600eba04143eb932dcc76bc5b8bbe/",
+    "technologies": ["ArcGIS", "GIS", "Python"]
+  },
+  {
+    "id": 5,
+    "title": "Tweetless",
+    "description": "A Twitter-like social media service built with generative AI",
+    "image": "GitHub.png",
+    "link": "https://github.com/CS397-SP25-AppliedAI/assignment-4-tweetlesswonders",
+    "technologies": ["CoPilot", "Lovable AI", "ChatGPT", "Claude"]
+  },
+  {
+    "id": 6,
+    "title": "Building the Personal Project | Course Design",
+    "description": "A course design proposal employing modern pedagogical strategies",
+    "image": "GitHub.png",
+    "link": "https://github.com/CS397-SP25-AppliedAI/assignment-4-tweetlesswonders",
+    "technologies": ["Learning Sciences", "Computer Science"]
+  },
+  {
+    "id": 7,
+    "title": "Rewiring the Classroom: AI and the Future of Educational Paradigms",
+    "description": "A generative AI implementation of a classroom management tool to explore educators implementing equity-focused pedagogical approaches",
+    "image": "GitHub.png",
+    "link": "https://www.mccormick.northwestern.edu/computer-science/research/tech-reports/post-2000.html#t2024",
+    "technologies": ["Claude Code", "GPT 4o", "CSS", "OpenAI API"]
   }
 ]
