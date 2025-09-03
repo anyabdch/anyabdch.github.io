@@ -6,6 +6,59 @@ let timeline = [];
 let currentSlide = 0;
 let currentAdminTab = 'projects';
 
+// initialize footer with the same content when each page loads
+async function initializeFooter() {
+    const footer = document.querySelector("footer");
+    if (!footer) return;
+
+    footer.innerHTML = `
+        <div class="col">
+            <h4>Skills</h4>
+            <ul>
+                <li>Language agnostic</li>
+                <li>Diverse IDE and framework knowledge</li>
+                <li>Office technology skills</li>
+                <li>Multilingual</li>
+            </ul>
+        </div>
+        <div data-bs-spy="scroll" data-bs-target="#menuHeader" data-bs-smooth-scroll="true" class="col scrollspy-example">
+            <ul id="contact">
+                <li>&#128205 </br> sometimes in Santa Monica, CA... sometimes in Chicago, IL</li>
+                <li>&#9993 anya[dot]bardach[at]gmail[dot]com</li>
+            </ul>
+            <ul id="links">
+                <li>
+                    <a rel="Anya Bardach's Profile" href="https://www.linkedin.com/in/anyabardach">
+                        <img class="l-img" rel="LinkedIn logo" src="/images/LinkedIn.png">
+                        <br>LinkedIn
+                    </a>
+                </li>
+                <li>
+                    <a rel="Anya Bardach's Repositories" href="https://github.com/anyabdch">
+                        <img class="l-img" rel="GitHub logo" src="/images/GitHub.png">
+                        <br>GitHub
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="col">
+            <h4>Interests</h4>
+            <ul>
+                <li>Sustainable tech</li>
+                <li>User-centered software</li>
+                <li>The New York Times Games suite</li>
+                <li>Peak bagging</li>
+                <li>Collective action</li>
+            </ul>
+        </div>
+    `;
+}
+
+document.addEventListener('DOMContentLoaded', function() {
+    initializeFooter();
+});
+
+
 async function loadProjects() {
     try {
         const response = await fetch('projects.json');
