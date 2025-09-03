@@ -389,8 +389,8 @@ function initializeTypedText() {
         if (typedElement) {
             new Typed('#typed-text', {
                 strings: [
-                    'Full-Stack Developer 💻',
                     'Social Policy BSEd, Computer Science MS 🎓',
+                    'Full-Stack Developer 💻',
                     'NYT Crosswords Fanatic 🧩',
                     'Creative Problem Solver 💡',
                     'EdTech Enthusiast 📚',
@@ -614,5 +614,6 @@ function addTimelineItem() {
     // Show success notification
     showNotification('Timeline item added successfully! ⭐', 'success');
 }
+
 
 
